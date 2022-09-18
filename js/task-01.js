@@ -1,8 +1,5 @@
 const categoriesList = document.querySelector("#categories");
 
-const categoriesLengs = () =>
-  console.log(`Number of categories: ${categoriesList.children.length}`);
-
 const categories = document.querySelectorAll(".item");
 
 const showCategory = (categories) =>
@@ -18,5 +15,5 @@ const showCategory = (categories) =>
     return showCategoryName, showelementCount;
   });
 
-categoriesLengs();
+console.log(`Number of categories: ${categoriesList.children.length}`);
 showCategory(categories);

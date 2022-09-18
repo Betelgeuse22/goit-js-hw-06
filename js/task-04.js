@@ -10,15 +10,9 @@ const valueEl = document.querySelector("#value");
 
 let counterValue = 0;
 
-const decrement = () => {
-  valueEl.textContent = counterValue;
-  counterValue += 1;
-};
+const decrement = () => (valueEl.textContent = counterValue += 1);
 
-const increment = () => {
-  valueEl.textContent = counterValue;
-  counterValue -= 1;
-};
+const increment = () => (valueEl.textContent = counterValue -= 1);
 
 buttonDecrement.addEventListener("click", decrement);
 
